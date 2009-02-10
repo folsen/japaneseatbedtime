@@ -1,0 +1,24 @@
+<h1>Editing japanese</h1>
+
+<% form_for(@japanese) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :japanese_romaji %><br />
+    <%= f.text_area :japanese_romaji %>
+  </p>
+  <p>
+    <%= f.label :japanese_kana %><br />
+    <%= f.text_area :japanese_kana %>
+  </p>
+  <p>
+    <%= f.label :swedish %><br />
+    <%= f.text_area :swedish %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @japanese %> |
+<%= link_to 'Back', japaneses_path %>

@@ -1,0 +1,16 @@
+<tr>
+  <td class="<%= cycle('red', 'green') %>">
+    <div class="japanese">
+      <%= japanese.japanese_romaji unless japanese.nil?%><br />
+      <span class="kana"><%= japanese.japanese_kana unless japanese.nil? %></span>
+    </div>
+  </td>
+  <td>-</td>
+  <td class="swedish <%= cycle('red', 'green') %>">  
+    <%= japanese.swedish unless japanese.nil? %>
+  </td>
+</tr>
+<% 
+  #throw one away
+  cycle('red', 'green') 
+%>

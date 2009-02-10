@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  japanese_romaji: MyText
+  japanese_kana: MyText
+  swedish: MyText
+
+two:
+  japanese_romaji: MyText
+  japanese_kana: MyText
+  swedish: MyText
