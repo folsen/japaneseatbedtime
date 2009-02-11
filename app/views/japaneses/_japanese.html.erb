@@ -1,16 +1,24 @@
 <tr>
-  <td class="<%= cycle('red', 'green') %>">
-    <div class="japanese">
+  <td class="japanese <%= cycle('green', 'red') %>">
+    <div class="romaji">
       <%= japanese.japanese_romaji unless japanese.nil?%><br />
-      <span class="kana"><%= japanese.japanese_kana unless japanese.nil? %></span>
+      <span class="kana">
+        <%= japanese.japanese_kana unless japanese.nil? %>
+        <% if logged_in? -%>
+          <span style="font-size: 12px">
+            <%= link_to 'Edit', edit_japanese_path(japanese) %>
+            <%= link_to 'Destroy', japanese_path(japanese), :method => :delete %>
+          </span>
+        <% end %>
+      </span>
     </div>
   </td>
   <td>-</td>
-  <td class="swedish <%= cycle('red', 'green') %>">  
+  <td class="swedish <%= cycle('green', 'red') %>">  
     <%= japanese.swedish unless japanese.nil? %>
   </td>
 </tr>
 <% 
   #throw one away
-  cycle('red', 'green') 
+  cycle('green', 'red') 
 %>

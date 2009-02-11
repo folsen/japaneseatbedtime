@@ -5,6 +5,7 @@ body, p, ol, ul, td {
   font-size:   13px;
   line-height: 18px;
 	margin-top: 30px;
+	text-align: center;
 }
 
 pre {
@@ -62,22 +63,39 @@ a:hover { color: #fff; background-color:#000; }
 	padding-left: 5px;
 	vertical-align: top;
 	padding-bottom: 35px;
+	line-height: 35px;
 }
 .japanese {
+	width: 500px;
+}
+.romaji {
 	text-align: left;
 	float: right;
 }
 .swedish {
 	text-align: left;
+	width: 500px;
 }
 .kana {
 	font-size: 20px;
-	position: relative;
-	top: 15px;
 }
 .red {
 	color: #DE0052;
 }
 .green {
 	color: #78E700;
+}
+.menu {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.notice {
+	color: green;
+	position: absolute;
+	left: 0px;
+	top: -30px;
+}
+form textarea {
+	height: 30px;
 }

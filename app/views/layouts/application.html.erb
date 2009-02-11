@@ -8,9 +8,15 @@
   <%= stylesheet_link_tag 'application' %>
 </head>
 <body>
+<% if logged_in? -%>
+  <div class="menu">
+    <%= link_to 'New', new_japanese_path %>
+    <%= link_to 'Log out', logout_path %>
+  </div>
+<% end -%>
   
 <% if flash[:notice] -%>
-  <p style="color: green"><%= flash[:notice] %></p>
+  <p class="notice"><%= flash[:notice] %></p>
 <% end -%>
 
 <%= yield  %>
