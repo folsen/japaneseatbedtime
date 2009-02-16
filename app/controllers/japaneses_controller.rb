@@ -3,7 +3,7 @@ class JapanesesController < ApplicationController
   # GET /japaneses
   # GET /japaneses.xml
   def index
-    @japaneses = Japanese.find(:all)
+    @japaneses = Japanese.find(:all, :order_by => :created_at )
 
     respond_to do |format|
       format.html # index.html.erb
