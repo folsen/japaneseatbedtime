@@ -59,18 +59,23 @@ a:hover { color: #fff; background-color:#000; }
 }
 
 #container {
-	background-color: black;
-	padding: 15px;
-	padding-bottom: 5px;
 	margin: auto;
+	border: 0;
 }
 #container tr {
-	margin-bottom: 15px;
+	background-color: black;
+	border-bottom: 15px solid black;
 }
-#japaneses td {
+.separator {
+	background-color: transparent;
+	height: 15px;
+}
+.japaneses {
+	padding: 15px;
+}
+.japaneses td {
 	font-size: 25px;
 	font-family: Arial;
-	padding-left: 15px;
 	vertical-align: top;
 	text-align: left;
 	line-height: 20px;
@@ -107,5 +112,5 @@ form textarea {
 	padding: 15px;
 	vertical-align: middle;
 	text-align: center;
-	border-bottom: 10px solid black;
+	border: 15px solid black;
 }

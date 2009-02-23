@@ -1,15 +1,16 @@
-<table id="container">
+<table id="container" cellspacing="0" cellpadding="0">
   <% @japaneses.group_by(&:week).each do |week, japaneses| %>
     <tr>
       <td class="week">
-        <big><%= week.to_i + 1 %></big><br />
+        <big><%= (week.to_i + 1).to_s.rjust(2,'0') %></big><br />
         <%= japaneses.first.created_at.year %>/<%= japaneses.first.created_at.month %>
       </td>
       <td>
-        <table id="japaneses">
+        <table class="japaneses">
         <%= render :partial => "japanese", :collection => japaneses %>
         </table>
       </td>
     </tr>
+    <tr class="separator"></tr>
   <% end %>
 </table>
