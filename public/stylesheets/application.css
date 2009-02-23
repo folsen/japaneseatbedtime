@@ -64,6 +64,9 @@ a:hover { color: #fff; background-color:#000; }
 	padding-bottom: 5px;
 	margin: auto;
 }
+#container tr {
+	margin-bottom: 15px;
+}
 #japaneses td {
 	font-size: 25px;
 	font-family: Arial;
