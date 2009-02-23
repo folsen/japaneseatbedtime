@@ -68,7 +68,7 @@ a:hover { color: #fff; background-color:#000; }
 }
 .separator {
 	background-color: transparent;
-	height: 15px;
+	height: 15px; !important
 }
 .japaneses {
 	padding: 15px;
