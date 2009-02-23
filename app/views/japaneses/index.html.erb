@@ -1,3 +1,15 @@
-<table id="japaneses">
-  <%= render :partial => "japanese", :collection => @japaneses %>
+<table id="container">
+  <% @japaneses.group_by(&:week).each do |week, japaneses| %>
+    <tr>
+      <td class="week">
+        <big><%= week %></big><br />
+        <%= japaneses.first.created_at.year %>/<%= japaneses.first.created_at.month %>
+      </td>
+      <td>
+        <table id="japaneses">
+        <%= render :partial => "japanese", :collection => japaneses %>
+        </table>
+      </td>
+    </tr>
+  <% end %>
 </table>
