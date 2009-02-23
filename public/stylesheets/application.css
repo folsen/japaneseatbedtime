@@ -79,6 +79,9 @@ a:hover { color: #fff; background-color:#000; }
 	vertical-align: top;
 	line-height: 20px;
 }
+.japaneses td a {
+	color: gray;
+}
 .japanese {
 	text-align: left;
 }
