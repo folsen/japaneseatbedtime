@@ -3,7 +3,7 @@
     <tr>
       <td class="week">
         <big><%= (week.to_i + 1).to_s.rjust(2,'0') %></big><br />
-        <%= japaneses.first.created_at.year %>/<%= japaneses.first.created_at.month %>
+        <%= japaneses.last.created_at.year %>/<%= japaneses.last.created_at.month %>
       </td>
       <td>
         <table class="japaneses">
