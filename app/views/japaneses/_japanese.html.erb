@@ -1,9 +1,9 @@
 <tr class="japanese <%= cycle('green', 'red') %>">
   <td>
     <div class="romaji">
-      <%= japanese.japanese_romaji unless japanese.nil?%><br />
+      <%= japanese.japanese_kana unless japanese.nil? %><br />
       <span class="kana">
-        <%= japanese.japanese_kana unless japanese.nil? %>
+        <%= japanese.japanese_romaji unless japanese.nil?%>
         <% if logged_in? -%>
           <span style="font-size: 12px">
             <%= link_to 'Edit', edit_japanese_path(japanese) %>
