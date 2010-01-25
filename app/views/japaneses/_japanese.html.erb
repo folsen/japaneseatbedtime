@@ -1,8 +1,8 @@
 <tr class="japanese <%= cycle('green', 'red') %>">
   <td>
-    <div class="romaji">
+    <div class="kana">
       <%= japanese.japanese_kana unless japanese.nil? %><br />
-      <span class="kana">
+      <span class="romaji">
         <%= japanese.japanese_romaji unless japanese.nil?%>
         <% if logged_in? -%>
           <span style="font-size: 12px">
