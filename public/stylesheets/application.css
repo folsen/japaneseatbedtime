@@ -79,7 +79,7 @@ a:hover { color: #fff; background-color:#000; }
 	font-size: 25px;
 	font-family: Arial;
 	vertical-align: top;
-	line-height: 20px;
+	line-height: 23px;
 }
 .japaneses td a {
 	color: gray;
@@ -90,8 +90,8 @@ a:hover { color: #fff; background-color:#000; }
 .swedish {
 	text-align: right;
 }
-.kana {
-	font-size: 15px;
+.romaji {
+	font-size: 12px;
 }
 .red {
 	color: #DE0052;
